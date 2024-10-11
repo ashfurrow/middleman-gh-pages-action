@@ -11,7 +11,7 @@ bundle list | grep "middleman ("
 echo 'Publishing site...'
 
 # We use this instead: https://github.com/edgecase/middleman-gh-pages
-bundle exec yaml:sort
+bundle exec rake yaml:sort
 bundle exec publish ALLOW_DIRTY=true
 
 echo 'Done'
